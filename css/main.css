@@ -1,0 +1,122 @@
+/* Se coloca una imagen de fondo, 
+un margin cero que evitará una línea entre el
+body y el header; así como el
+ tipo de fuente para el caracter del body */
+body {
+    background-image: url('../assets/images/mountain.jpg');
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+/* El header será de un tono, altura y ancho 
+específicos, cuidando usar porcentajes en el ancho
+para evitar se distorcione al cambio de 
+tamaño de pantalla  */
+header {
+    background: #61D3F0;
+    height: 60px;
+    width: 100%;
+}
+/* El párrafo hijo de header estará en el centro
+con un tamaño de fuente de 35px*/
+header p {
+    color: white;
+    font-size: 35px;
+    margin: 0;
+    text-align: center;
+}
+/* Asigna espaciado determinado en un título*/
+h1 {
+    padding-bottom: 0px;
+}
+/* Asigna espaciado determinado en una descripción
+de perfil*/
+p {
+    padding-top: 0px;
+}
+/* Asigna color y espaciado en un título*/
+h4 {
+    color: #547687;
+    margin-top: 70px;
+}
+/*Espacio para que el usuario ingrese caracteres*/
+textarea {
+    border: none;
+    color: #898888;
+    margin: 30px;
+    margin-left: 40px;
+    max-height: 210px;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    width: 500px;
+}
+/*Agregar la línea guía para el texto que ingresará
+el usuario */
+hr {
+    width: 500px;
+    border: .5px solid #547687;
+}
+
+/*Asignar características a la sección que lleva los
+dos divs principales de la página*/
+#wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 30px;
+}
+/*Asignar características a la sección que lleva los
+datos principales del usuario*/
+#profile {
+    background: white;
+    border-radius: 5px;
+    height: 270px;
+    margin-right: 30px;
+    padding-left: 30px;
+}
+/*Dar forma a la sección que lleva dentro el contador
+de caracteres, el reloj que permitirá asignar la hora
+en la que el twit se envió así como el botón de envío*/
+#send-twitt {
+    background: white;
+    border-radius: 5px;
+    max-height: 500px;
+    margin-left: 30px;
+}
+
+/* Dar forma al boton de Tweet*/
+#send-twitt button {
+    border: none;
+    color: white;
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 55px; 
+    height: 30px;
+    width: 60px;
+    background-color: #ededed; 
+}
+/*Acomodar el contador 140 de lado derecho*/
+#character-count {
+    display: inline;
+    margin-top: 0;
+    margin-right: 35px;
+    padding-left: 370px;
+}
+
+#time-line div {
+    background: white;
+    border-radius: 5px;
+    max-height: 100px;
+    margin: 15px 30px;
+}
+
+#time-line div p {
+    padding: 10px 20px;
+    margin: 0px;
+    color:  #898888;
+}
+
+#time-line span {
+    display: block;
+    padding: 10px 20px;
+    margin: 0px;
+} 
